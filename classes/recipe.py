@@ -21,7 +21,7 @@ class Recipe:
 
     def scale(self, ratio: float):
         if not Recipe.is_valid_ratio(ratio):
-            raise ValueError("коэффицеиент должен быть >0")
+            raise ValueError("коэффициент должен быть >0")
         
         ratio_ingredients=[]
         for product in self.ingredients:
