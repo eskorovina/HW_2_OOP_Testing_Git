@@ -1,8 +1,12 @@
+from Recipe import Recipe
+from ShoppingList import ShoppingList
+from Ingredient import Ingredient
+
 class ShoppingList:
     def __init__(self):
         self._items = []
     
-    def add_recipe(recipe: Recipe, portions: float):
+    def add_recipe(self, recipe: Recipe, portions: float):
         if portions<=0:
             raise ValueError("Количество порций должно быть положительным")
         scale_recipe = recipe.scale(portions)
