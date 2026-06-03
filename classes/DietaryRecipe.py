@@ -1,3 +1,5 @@
+from Recipe import Recipe
+
 class DietaryRecipe(Recipe):
     def __init__(self, title: str, diet_type: str, ingredients: list):
         super.__init__(title, ingredients)

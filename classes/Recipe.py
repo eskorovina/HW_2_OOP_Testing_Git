@@ -1,3 +1,5 @@
+from Ingredient import Ingredient
+
 class Recipe:
     def __init__(self, title: str, ingredients: list):
         self.title=title
@@ -10,7 +12,7 @@ class Recipe:
                 return
         self.ingredients.append(ingredient)
 
-    @static method
+    @staticmethod
     def is_valid_ratio(ratio):
         try:
             return ratio>0
