@@ -1,6 +1,6 @@
-from Recipe import Recipe
-from ShoppingList import ShoppingList
-from Ingredient import Ingredient
+from .recipe import Recipe
+from .shoppingList import ShoppingList
+from .ingredient import Ingredient
 
 class ShoppingList:
     def __init__(self):

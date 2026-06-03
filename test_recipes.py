@@ -1,7 +1,7 @@
 import pytest
-from classes.Ingredient import Ingredient
-from classes.Recipe import Recipe
-from classes.ShoppingList import ShoppingList
+from classes.ingredient import Ingredient
+from classes.recipe import Recipe
+from classes.shoppingList import ShoppingList
 
 def test_ingredient():
     ingredient1 = Ingredient("Мука", 500.0, "г")
