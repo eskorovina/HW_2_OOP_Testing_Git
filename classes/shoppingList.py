@@ -1,5 +1,4 @@
 from .recipe import Recipe
-from .shoppingList import ShoppingList
 from .ingredient import Ingredient
 
 class ShoppingList:
@@ -28,7 +27,7 @@ class ShoppingList:
         
         return result
     
-    def __add__(self, other: ShoppingList):
+    def __add__(self, other: 'ShoppingList'):
         new_shopping_list=ShoppingList()
         new_shopping_list._items = self._items+other._items
         return new_shopping_list
